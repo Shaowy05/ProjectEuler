@@ -1,16 +1,7 @@
-a = 0
-n = 1
 total = 0
 
-while a < 1000:
-    a = n * 3
-    total += a
-    n += 1
+for i in range (998):
+    if (i+1) % 3 == 0 or (i+1) % 5 == 0:
+        total += (i+1)
 
-n = 1
-while a < 1000:
-    a = n * 5
-    n += 1
-    total += a
-
-print(total)
+print (total)
